@@ -7,6 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="webjars/bootstrap/5.1.3/css/bootstrap.min.css"/>
 </head>
 <body>
 
@@ -35,40 +36,43 @@
 	
 	
 	
-	<!-- EXERCICIO 1-->
-		<c:set var="num" value="8"/>
-		
-		  
-		<c:choose>
- 				<c:when test="${num>10}">
- 					<h1><c:out value="${num}é maior que 10"/></h1>
- 				</c:when>
- 				<c:otherwise>
- 					<h1><c:out value="${num} é menor que 10"/></h1>
- 				</c:otherwise>
- 		</c:choose>
- 		
- 		
- 		
- 	
-		
 	
-		<c:set var="comparacao" value="false"/>
-		<c:set var="num1" value="8"/>
-		<c:set var="num2" value="12"/>
- 		<c:if test="${num1!=num2}">
-	     	<h1 class="text-decoration-underline"><c:out value="${num1}"/> e <c:out value="${num2}"/> são diferentes. Pesquise no <a href="https://google.com" target="_blank">google</a>!</h1>
- 		</c:if>
- 		
- 		
- 		
- 		
- 		<c:set var="minusculo" value="enviar"/>
- 		<button class="btn btn-warning w-50">${fn:toUpperCase(minusculo)}</button>
-		  
-		  
-	<!-- FIM EXERCICIO 1-->
+		<!-- EXERCICIO-->
+			<div class="bg-dark text-light text-center">	
+			
+				<c:set var="num" value="8"/>
+				
+				  
+				<c:choose>
+		 				<c:when test="${num>10}">
+		 					<h1><c:out value="${num}é maior que 10"/></h1>
+		 				</c:when>
+		 				<c:otherwise>
+		 					<h1><c:out value="${num} é menor que 10"/></h1>
+		 				</c:otherwise>
+		 		</c:choose>
+	 		
+	 		
+	 		
+	 	
+	
 		
+				<c:set var="comparacao" value="false"/>
+				<c:set var="num1" value="8"/>
+				<c:set var="num2" value="12"/>
+		 		<c:if test="${num1!=num2}">
+			     	<h1 class="text-decoration-none"><c:out value="${num1}"/> e <c:out value="${num2}"/> são diferentes. Pesquise no <a class="fw-bold text-decoration-none" href="https://google.com" target="_blank">google</a>!</h1>
+		 		</c:if>
+		 		
+		 		
+		 		
+		 		
+		 		<c:set var="minusculo" value="enviar"/>
+		 		<button class="btn btn-warning w-50">${fn:toUpperCase(minusculo)}</button>
+				
+		  
+			<!-- FIM EXERCICIO-->
+	</div>
 	
 	
 </body>
